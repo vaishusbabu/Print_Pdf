@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import HomePage from './Component/HomePage';
+
+// import React, { useRef } from 'react';
+// import ReactToPrint from 'react-to-print';
+
+const App = () => {
+  // const componentRef = useRef();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <ReactToPrint
+        trigger={() =>
+          <button type="button" class="btn btn-dark">Print pdf</button>}
+        content={() => componentRef.current}
+      /> */}
+      {/* <HomePage ref={componentRef} /> */}
+      <HomePage />
     </div>
   );
-}
+};
 
 export default App;
